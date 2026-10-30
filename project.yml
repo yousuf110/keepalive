@@ -1,0 +1,27 @@
+name: KeepAlive
+options:
+  bundleIdPrefix: com.personal
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  KeepAlive:
+    type: application
+    platform: iOS
+    sources:
+      - KeepAlive
+    info:
+      path: KeepAlive/Info.plist
+      properties:
+        CFBundleDisplayName: KeepAlive
+        UILaunchScreen: {}
+        UIBackgroundModes:
+          - audio
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.personal.keepalive
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
